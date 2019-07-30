@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="expensesApp">
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user.scalable=no, with=device.width">
+<title>Simple Expenses Tracker</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css">
+<link href="css/style.css" rel="stylesheet">
+
+<body ng-controller="HomeViewController">
+    <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <span class="navbar-brand"><img src="" class="brand" height="20" />
+                    {{appTitle}}
+                </span>
+            </div>
+        </div>
+    </nav>
+    </br>
+    <div class="container" ng-view>
+    </div>
+
+    <!-- <div class="container" ng-controller="ExpensesViewcontroller">
+        <div class="row">
+            LIST OF ALL FILTERS: <
+            <div class="col-12">
+                <ul class="list-group">
+                    <li ng-repeat="expense in expenses" class="list-group-item text-cemter">
+                        <span class="pull-left">$ {{expense.amount | number:2}}</span>
+                        {{expense.description | uppercase}}
+                    </li> -->
+
+                    <!-- <li class="list-group-item text-center">
+                        <span class="pull-left"> $10 </span> food
+                        <button type="button" class="btn btn-danger btn-s pull-right btn-separation-left">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+                        <a href="" class="btn btn-primary btn-s pull-right"><span
+                                class="glyphicon glyphicon-pencil"></span></a>
+                    </li>
+
+                    <li class="list-group-item text-center">
+                        <span class="pull-left"> $10 </span> food
+                        <button type="button" class="btn btn-danger btn-s pull-right btn-separation-left">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+                        <a href="" class="btn btn-primary btn-s pull-right"><span
+                                class="glyphicon glyphicon-pencil"></span></a>
+                    </li>
+
+                    <li class="list-group-item text-center">
+                        <span class="pull-left"> $10 </span> food
+                        <button type="button" class="btn btn-danger btn-s pull-right btn-separation-left">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+                        <a href="" class="btn btn-primary btn-s pull-right"><span
+                                class="glyphicon glyphicon-pencil"></span></a>
+                    </li>
+
+                    <li class="list-group-item text-center">
+                        <span class="pull-left"> $10 </span> food
+                        <button type="button" class="btn btn-danger btn-s pull-right btn-separation-left">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+                        <a href="" class="btn btn-primary btn-s pull-right"><span
+                                class="glyphicon glyphicon-pencil"></span></a>
+                    </li> -->
+<!-- 
+                </ul>
+
+            </div>
+        </div>
+    </div> -->
+
+
+    <script src="js/underscore-min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
